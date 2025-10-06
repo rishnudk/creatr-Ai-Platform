@@ -24,7 +24,10 @@ export const store = mutation({
 
     return await ctx.db.insert("users", {
       name: identity.name ?? "Anonymous",
+      email: identity.email ?? "no-email@unknown.com", // ✅ Added
       tokenIdentifier: identity.tokenIdentifier,
+      imageUrl: identity.pictureUrl ?? null, // ✅ Optional field
+      username: identity.username ?? null,   // ✅ Optional field
       createdAt: Date.now(),
       lastActiveAt: Date.now(),
     });
