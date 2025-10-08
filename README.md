@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Environment Variables
 
-## Getting Started
+This project uses **Next.js**, **Convex**, **Clerk**, **Imagekit**, **Unsplash**, and **Google Gemini API**.  
+This file documents all environment variables required for local development and deployment.
 
-First, run the development server:
+> ⚠️ To run the project locally, always run:
+>
+> ```bash
+> npm run dev
+> npx convex dev
+> ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Deployment used by `npx convex dev`
+CONVEX_DEPLOYMENT=
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_CONVEX_URL=
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-## Learn More
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
-To learn more about Next.js, take a look at the following resources:
+CLERK_JWT_ISSUER_DOMAIN=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Imagekit
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=
+NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT=
+IMAGEKIT_PRIVATE_KEY=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Unsplash
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Gemini
+GEMINI_API_KEY=
