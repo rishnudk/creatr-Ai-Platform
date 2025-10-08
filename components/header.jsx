@@ -70,14 +70,14 @@ export default function Header() {
         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <Authenticated>
             {/* Show Dashboard link on feed page */}
-            {/* {path === "/feed" && (
+            {path === "/feed" && (
               <Link href="/dashboard">
                 <Button variant="outline" className="hidden sm:flex" size="sm">
                   <LayoutDashboard className="h-4 w-4" />
                   <span className="hidden md:inline ml-2">Dashboard</span>
                 </Button>
               </Link>
-            )} */}
+            )}
 
             <UserButton
               appearance={{
