@@ -54,7 +54,7 @@ export default function DashboardPage() {
     return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
-          <Loader2 className="h-8 w-8 animate-spin text-purple-400 mx-auto" />
+          <Loader2 className="h-8 w-8 animate-spin text-green-400 mx-auto" />
           <p className="text-slate-400 mt-4">Loading dashboard...</p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export default function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-300">
               Total Views
             </CardTitle>
-            <Eye className="h-4 w-4 text-blue-400" />
+            <Eye className="h-4 w-4 text-green-400" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-white">
@@ -121,7 +121,7 @@ export default function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-300">
               Total Likes
             </CardTitle>
-            <Heart className="h-4 w-4 text-red-400" />
+            <Heart className="h-4 w-4 text-emerald-400" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-white">
@@ -141,7 +141,7 @@ export default function DashboardPage() {
             <CardTitle className="text-sm font-medium text-slate-300">
               Comments
             </CardTitle>
-            <MessageCircle className="h-4 w-4 text-yellow-400" />
+            <MessageCircle className="h-4 w-4 text-lime-400" />
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-white">
@@ -199,7 +199,7 @@ export default function DashboardPage() {
             <CardContent>
               {postsLoading ? (
                 <div className="flex items-center justify-center py-8">
-                  <Loader2 className="h-6 w-6 animate-spin text-purple-400" />
+                  <Loader2 className="h-6 w-6 animate-spin text-green-400" />
                 </div>
               ) : !recentPosts || recentPosts.length === 0 ? (
                 <div className="text-center py-8">
@@ -241,8 +241,8 @@ export default function DashboardPage() {
                               post.status === "published"
                                 ? "bg-green-500/20 text-green-300 border-green-500/30"
                                 : post.status === "scheduled"
-                                  ? "bg-blue-500/20 text-blue-300 border-blue-500/30"
-                                  : "bg-orange-500/20 text-orange-300 border-orange-500/30"
+                                  ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
+                                  : "bg-lime-500/20 text-lime-300 border-lime-500/30"
                             }
                           >
                             {post.status}
@@ -307,7 +307,7 @@ export default function DashboardPage() {
             <CardContent>
               {activityLoading ? (
                 <div className="flex items-center justify-center py-8">
-                  <Loader2 className="h-5 w-5 animate-spin text-purple-400" />
+                  <Loader2 className="h-5 w-5 animate-spin text-green-400" />
                 </div>
               ) : !recentActivity || recentActivity.length === 0 ? (
                 <div className="text-center py-8">
@@ -320,10 +320,10 @@ export default function DashboardPage() {
                       <div
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-xs ${
                           activity.type === "like"
-                            ? "bg-red-500/20 text-red-300"
+                            ? "bg-emerald-500/20 text-emerald-300"
                             : activity.type === "comment"
-                              ? "bg-blue-500/20 text-blue-300"
-                              : "bg-green-500/20 text-green-300"
+                              ? "bg-green-500/20 text-green-300"
+                              : "bg-lime-500/20 text-lime-300"
                         }`}
                       >
                         {activity.type === "like" && (

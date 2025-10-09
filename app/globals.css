@@ -129,7 +129,7 @@ html {
 
 /* Text Gradient - Complex gradient used across the app */
 .gradient-text-primary {
-  @apply bg-gradient-to-r from-white via-purple-200 to-blue-200 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-white via-green-200 to-emerald-200 bg-clip-text text-transparent;
 }
 
 .gradient-text-accent {
@@ -138,5 +138,5 @@ html {
 
 /* Glass Card Effect - Complex background/border combination used frequently */
 .card-glass {
-  @apply bg-gray-900/50 border-gray-800 hover:border-purple-500/50;
+  @apply bg-gray-900/50 border-gray-800 hover:border-green-500/50;
 }
